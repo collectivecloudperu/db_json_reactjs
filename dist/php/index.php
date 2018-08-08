@@ -6,7 +6,7 @@ header('Content-Type: application/json');
 define('DB_HOST', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_NAME', 'tutoriales');
+define('DB_NAME', 'tubasededatos');
 
 // Desplegamos la conexión a la Basde de Datos
 $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
