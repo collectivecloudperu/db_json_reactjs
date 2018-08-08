@@ -9,7 +9,7 @@ class Postres extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost/tutoriales/json_reactjs/dist/php/")
+    fetch("http://localhost/json_reactjs/php/datos.php")
       .then(res => res.json())
       .then(
         (result) => {
