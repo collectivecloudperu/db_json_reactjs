@@ -11,6 +11,9 @@ define('DB_NAME', 'tubasededatos');
 // Desplegamos la conexión a la Basde de Datos
 $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
+// Soporte para caracteres UT8
+$mysqli->query("SET NAMES 'utf8'");
+
 if(!$mysqli){
 	die("La Conexión ha fallado: " . $mysqli->error);
 }
